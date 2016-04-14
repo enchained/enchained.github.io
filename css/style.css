@@ -1,0 +1,147 @@
+body {
+    padding-top: 50px;
+    font-family: 'geometria_lightlight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.846;
+    color: #333333;
+}
+
+.panel {
+    border-radius: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+.panel-heading {
+    background-color: transparent !important;
+    padding: 0 15px;
+}
+.panel-body {
+    padding: 0 15px;
+}
+
+.summary {
+    margin-top: 15px;
+    width: 320px;
+    float: left;
+    margin-right: 15px;
+    border-right: 1px solid #C8C8C8;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+.summary .panel-heading {
+    border: none;
+    padding-right:  20px;
+}
+
+.name {
+    padding: 0 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.photo {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#collapse-about {
+    display: block;
+    height: auto !important;
+}
+
+.mobile-view {
+    display: none;
+}
+
+ul.skills {
+    list-style-type: none;
+}
+
+ul.skills li {
+    border: 1px solid #000;
+    margin: 5px;
+    padding: 5px;
+}
+
+.tag {
+    font-size: 100%;
+}
+
+.resume_content {
+    width: 70%;
+    float: right;
+}
+
+.links a, .projects a{
+    font-size: 120%;
+}
+
+.skills div {
+    margin: 3px 0;
+}
+
+.projects a:first-of-type{
+    margin-right: 15px;
+}
+
+.more {
+    border-bottom: 1px dotted #337ab7;
+    text-decoration: none;
+}
+
+.courses {
+    margin-bottom: 20px;
+}
+
+
+@font-face {
+    font-family: 'geometria_lightlight';
+    src: url('../fonts/Geometria-Light-webfont.eot');
+    src: url('../fonts/Geometria-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geometria-Light-webfont.woff2') format('woff2'),
+        url('../fonts/Geometria-Light-webfont.woff') format('woff'),
+        url('../fonts/Geometria-Light-webfont.ttf') format('truetype'),
+        url('../fonts/Geometria-Light-webfont.svg#geometria_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media (max-width: 1200px) {
+    body {
+        padding-top: 0;
+    }
+    .summary {
+        width: auto;
+        float: none;
+        display: block;
+        position: inherit;
+        margin-top: 0;
+        border-right: none;
+    }
+    .photo {
+        width: 200px;
+    }
+    #collapse-about-btn {
+        display: inline !important;
+    }
+    #collapse-about {
+        display: none;
+    }
+    #collapse-about.in {
+        display: block;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .skills div span:first-of-type {
+        display: block;
+        margin-top: 5px;
+    }
+    .resume_content {
+        width: auto;
+        float: none;
+    }
+}
